@@ -1,0 +1,73 @@
+.Card {
+	width: 600px;
+	height: 220px;
+	display: flex;
+	border-radius: 8px;
+
+	-webkit-box-shadow: 0px 0px 8px 4px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 0px 8px 4px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 0px 8px 4px rgba(34, 60, 80, 0.2);
+	overflow: hidden;
+	cursor: pointer;
+
+	&:hover {
+		transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		-webkit-box-shadow: 0px 0px 16px 8px rgba(34, 60, 80, 0.2);
+		-moz-box-shadow: 0px 0px 16px 8px rgba(34, 60, 80, 0.2);
+		box-shadow: 0px 0px 16px 8px rgba(34, 60, 80, 0.2);
+	}
+}
+
+.Card__Img {
+	height: 100%;
+	object-fit: cover;
+	border-radius: 24px;
+	padding: 16px;
+
+	@media (max-width: 700px) {
+		width: 100%;
+	}
+}
+
+.Card__Content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 16px;
+	flex-grow: 1;
+	gap: 10px;
+	overflow: hidden;
+}
+
+.Card__LinkWrapper {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.Card__Link {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+	font-size: 24px;
+}
+
+.Card__Text {
+	font-size: 20px;
+}
+
+.Card__Btn {
+	cursor: pointer;
+	background: none;
+	border: solid 2px skyblue;
+	border-radius: 8px;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 5px 15px;
+
+	&:hover {
+		transition: background-color 0.3s ease;
+		background-color: rgba(0, 0, 0, 0.1);
+		border: solid 2px blue;
+	}
+}

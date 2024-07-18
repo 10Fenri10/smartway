@@ -1,0 +1,55 @@
+// import styled from 'styled-components';
+
+// export const Container = styled.div`
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
+// height: 100vh;
+// border: 1px solid;
+// `;
+
+// export const Link = styled.a`
+// text-decoration: none;
+// font-size: 24px;
+// `;
+
+// export const Text = styled.strong`
+//   font-size: 20px;
+// `;
+
+.Container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	border: 1px solid;
+}
+
+.Container__Btn {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	cursor: pointer;
+	background: none;
+	border: solid 2px skyblue;
+	border-radius: 8px;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 5px 15px;
+
+	&:hover {
+		transition: background-color 0.3s ease;
+		background-color: rgba(0, 0, 0, 0.1);
+		border: solid 2px blue;
+	}
+}
+
+.Container__Link {
+	text-decoration: none;
+	font-size: 24px;
+}
+.Container__Info {
+	font-size: 20px;
+}

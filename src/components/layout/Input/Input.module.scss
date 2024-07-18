@@ -1,0 +1,17 @@
+.Container {
+	display: flex;
+	justify-content: start;
+	gap: 24px;
+}
+
+.Container__Input {
+	border: solid 2px skyblue;
+	border-radius: 8px;
+	font: inherit;
+	padding: 8px 16px;
+	width: 40%;
+
+	:focus {
+		border: solid 2px blue;
+	}
+}
